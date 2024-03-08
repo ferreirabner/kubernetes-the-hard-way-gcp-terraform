@@ -43,7 +43,7 @@ resource "google_compute_firewall" "internal_rules" {
   }
 
   allow {
-    protocol  = "tcp"
+    protocol  = "udp"
   }
 
   allow {
@@ -64,7 +64,7 @@ resource "google_compute_firewall" "external_rules" {
     ports = ["22"]
   }
   allow {
-    protocol  = "udp"
+    protocol  = "tcp"
     ports = ["6443"]
   }
   allow {
