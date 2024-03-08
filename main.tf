@@ -43,7 +43,7 @@ resource "google_compute_firewall" "internal_rules" {
   }
 
   allow {
-    protocol  = "udp"
+    protocol  = "tcp"
   }
 
   allow {
